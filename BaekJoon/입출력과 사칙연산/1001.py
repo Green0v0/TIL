@@ -1,0 +1,8 @@
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(type(a))
+print(type(b))
+print(a)
+print(b)
+print(a-b)
