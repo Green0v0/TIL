@@ -4,8 +4,7 @@
 - [ ] ObjectDetection 복습
 - [ ] 프로젝트
 - [ ] Daily+Tistory
-- [ ] 자기소개서
-<
+- [ ] 자기소개서<br>
 **_0512**
 - [x] DL/ObjectDetection 복습
 - [x] Notion 연결리스트 강의 듣기
