@@ -2,7 +2,7 @@
 - [ ] ObjectDetection 복습
 - [ ] 프로젝트
 - [ ] 자기소개서
-- [ ] GSAT
+- [ ] GSAT  
 **_0514**
 - [X] DL 강의1
 - [X] DL 강의2<br>
