@@ -6,10 +6,17 @@
 # 마지막 남은 막대들의 개수를 반환
 # 만약 마지막 단계에서 막대가 하나밖에 없다면 1을 반환하라
 
-# 이진수 활용
+# 이진수 활용 < 아닌듯ㅋㅋㅋㅋㅋㅋㅋㅋ
 def solution(x):
-    # 64 -> 1000000
-    # 32 -> 100000
-    return list(bin(x)).count('1')
+    bar = [64, 32, 16, 8, 4, 2, 1]
+    n = 0
+    while True:
+        if (x==0):
+            return n
+        for i in range(len(bar)):
+            if (bar[i]<=x):
+                x-=bar[i]
+                n+=1
+        return n
 
-print(solution(3))
+print(solution(65))
