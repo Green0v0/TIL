@@ -1,6 +1,10 @@
-# TODO
-- [ ] ObjectDetection 복습
-- [ ] GSAT  
+# TODO_0521
+- [ ] 기출
+- [ ] Daily
+- [ ] Django  
+**_0519**  
+- [X] ObjectDetection 복습
+- [X] GSAT  
 **_0516**
 - [X] 엔코아 코딩테스트  
 **_0515**
