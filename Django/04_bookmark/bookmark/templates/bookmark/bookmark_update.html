@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Bookmark List{% endblock %}
+{% block content %}
+    <!--action = 우리가 작성한 데이터를 어느 페이지로 보내어 처리할 것이냐
+        장고는 대부분 현재 페이지에서 처리하기 때문에 비워두면 된다.-->
+    <form action="" method="post">
+        {% csrf_token %} <!--보안을 위한 토큰-->
+        {{form.as_p}}
+    <input type="submit" value="Update" class="btn btn-info btn-sm">
+    </form>
+{% endblock %}

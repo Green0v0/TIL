@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Bookmark Add{% endblock %}
+{% block content %}
+<!--action은 어디로 보내줄 거냐
+method는 어떤 형태로 보내줄 거냐는 의미
+페이지에 접근할 때는, get 방식, 입력이 완료되면 post 방식이므로 구별이 가능하다-->
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Add" class="btn btn-info btn-sm">
+    </form>
+{% endblock %}

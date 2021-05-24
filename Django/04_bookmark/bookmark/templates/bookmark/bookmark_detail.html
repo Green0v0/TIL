@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Detail{% endblock %}
+{% block content %}
+<!--딱, 1개의 정보가 올 때는, 장고가 object로 건내준다.-->
+    {{object.site_name}}<br/>
+    {{object.url}}
+{% endblock %}
