@@ -1,0 +1,29 @@
+<!-- template 파일 : html을 기반 + django 문법 = django html -->
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--문서의 정보들-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll List</title>
+</head>
+<body>
+    <!--a : 링크를 걸어주는 태그-->
+    <a href="http://daum.net">Da&nbsp;&nbsp;&nbsp;um</a><br>
+    <a href="http://naver.com">Naver</a>
+    <h1>설문 목록</h1>
+    <!--{{question_list}}은 django template 문법-->
+    <ul> <!--<ol>은 숫자-->
+        {% for question in question_list %} <!--템플릿 태그: 실행할 코드를 작성(반복or조건문)-->
+        
+        <li> <!--같은 페이지 안의 이동에서는, 127.0.0.1:8000 생략 가능-->
+            {{question.pub_date | date:'Y-m-d'}}<br>
+            <a href="/polls/vote_form/{{question.id}}">{{question.question_text}}</a>
+        </li> 
+        <!--템플릿 변수: python, django와 관련된 데이터를 출력할 때는 중괄호 2개가 필요하다-->
+
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
