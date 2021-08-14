@@ -7,6 +7,7 @@ def solution(clothes):
     for t in list(map(lambda x: len(x) + 1, dic.values())):
         total *= t
     return total - 1
+
 def solution1(clothes): # https://velog.io/@djagmlrhks3/Algorithm-Programmers-%EC%9C%84%EC%9E%A5-by-Python
     answer = 1
     total = dict()
