@@ -11,5 +11,5 @@ for _ in range(n):
     m = max(imp)
     # if imp[idx] != m:
     # imp[idx] = (imp[idx], t)
-    #
+    # 흠.... 논리 구조를 다시 짜보기
     # for item in imp:
