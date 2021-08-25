@@ -1,6 +1,6 @@
 # min, max : X
-import sys
-sys.stdin = open("./input/input_2.txt", "r")
+#import sys
+#sys.stdin = open("./input/input_2.txt", "r")
 
 T = int(input())
 for t in range(T):
